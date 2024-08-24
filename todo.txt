@@ -1,0 +1,6 @@
+- Make button increment counter
+- Connect counter to backend so that backend values update when counter is clicked
+- Find a way to persist staying on this page even when the app is closed. 
+- Hook up next frontend panel to receive backend values. 
+- Create basic endpoints on Anthony server.
+- socketio in backends
