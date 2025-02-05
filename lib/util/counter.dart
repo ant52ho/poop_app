@@ -64,12 +64,12 @@ class _CounterScreenState extends State<CounterScreen> {
     super.dispose();
   }
 
-  void _increment() {
+  void _increment(String user) {
     String cmd = 'poop/$user/increment';
     socketManager.emit('publish', cmd);
   }
 
-  void _decrement() {
+  void _decrement(String user) {
     String cmd = 'poop/$user/decrement';
     socketManager.emit('publish', cmd);
   }
@@ -90,7 +90,7 @@ class _CounterScreenState extends State<CounterScreen> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
                 ),
-                onPressed: _decrement,
+                onPressed: () => _decrement(user),
                 child: Container(
                   alignment: Alignment.center,
                   width: 100,
@@ -108,7 +108,7 @@ class _CounterScreenState extends State<CounterScreen> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
                 ),
-                onPressed: _increment,
+                onPressed: () => _increment(user),
                 child: Container(
                   alignment: Alignment.center,
                   width: 100,

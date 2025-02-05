@@ -7,13 +7,12 @@ import './util/app_state_notifier.dart';
 
 // env vars
 // String socketUri = "http://172.20.10.3:5000";
-String socketUri = "http://192.168.1.182:5000";
+String socketUri = "https://ant-personal-site-backend.fly.dev:5000";
 String appGroup = "group.anthony.poopapp";
 String widgetName = "poopApp";
 
 void main() async {
   // start homescreen widget comms
-  print("start");
   WidgetsFlutterBinding.ensureInitialized();
   HomescreenWidget(appGroupIdRef: appGroup, widgetName: widgetName);
   WidgetsFlutterBinding.ensureInitialized();

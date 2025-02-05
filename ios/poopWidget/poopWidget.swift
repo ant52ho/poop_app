@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 import Foundation
+import AppIntents
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> PoopEntry {
@@ -22,9 +23,10 @@ struct Provider: TimelineProvider {
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         Task {
             // get data here
+            print("GETTING POOP DATA")
             let data = try? await fetchPoop();
 //            let userDefaults = UserDefaults(suiteName: Config.poopAppGroup)
-//            let data = userDefaults?.string(forKey: Config.dbKey) ?? "No 
+//            let data = userDefaults?.string(forKey: Config.dbKey) ?? "No
             let entry = PoopEntry(date: Date(), data: data ?? "null data")
             
             // Next fetch happens 15 minutes later
@@ -48,16 +50,65 @@ struct PoopEntry: TimelineEntry {
     let data: String
 }
 
+func parsePersonData(from jsonString: String) -> [PersonData] {
+    // Convert JSON string to Data
+    if let jsonData = jsonString.data(using: .utf8) {
+        do {
+            // Parse JSON data to Dictionary
+            let dictionary = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Int]
+            
+            // Map dictionary to an array of PersonData
+            let personDataList = dictionary?.map { PersonData(name: $0.key.capitalized, value: $0.value) } ?? []
+            
+            let sortedPersonDataList = personDataList.sorted { $0.name < $1.name }
+            
+            return sortedPersonDataList
+            
+        } catch {
+            print("Failed to parse JSON: \(error.localizedDescription)")
+        }
+    }
+    // Return an empty array if parsing fails
+    return []
+}
+
 struct poopWidgetEntryView : View {
+    let username = Config.localDB?.string(forKey: "username") ?? "Guest"
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Data:")
-            Text(entry.data)
+        GeometryReader { geometry in
+            HStack (alignment: .center, spacing: 10) {
+                // add button here
+                BarChartView(data: parsePersonData(from: entry.data))
+                    .frame(
+                        maxWidth: .infinity,
+                        maxHeight: .infinity
+                    )
+//                    .border(Color.blue)
+//                VStack {
+//                    Spacer()
+//                    Button(action: {
+//                        Task {
+//                            try await incrementPoop()
+//                        }
+//                    }) {
+//                        Text("+").font(.caption).frame(height: 30)
+//                            
+//                    }
+//                    
+//                    Spacer()
+//                    
+//                    Button(action: {
+//                        Task {
+//                            try await decrementPoop()
+//                        }
+//                    }) {
+//                        Text("-").font(.caption).frame(height: 30)
+//                    }
+//                    Spacer()
+//                }
+            }
         }
     }
 }
@@ -81,93 +132,13 @@ struct poopWidget: Widget {
     }
 }
 
+
+// I think here the easiest way is just to fire an increment via http
+// which then receives a response of the updated counter.
+
 #Preview(as: .systemSmall) {
     poopWidget()
 } timeline: {
-    PoopEntry(date: .now, data: "default")
-    PoopEntry(date: .now, data: "default2")
+    PoopEntry(date: .now, data: "{\"anthony\": 4, \"clare\": 100}")
+    PoopEntry(date: .now, data: "{\"anthony\": 4, \"clare\": 2}")
 }
-
-//
-//struct Provider: AppIntentTimelineProvider {
-//    func placeholder(in context: Context) -> PoopWidgetEntry {
-//        PoopWidgetEntry(date: Date(), data: "Placeholder", configuration: ConfigurationAppIntent())
-//    }
-//    
-//    func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> PoopWidgetEntry {
-//        if context.isPreview{
-//            return(placeholder(in: context))
-//        } else {
-//            let userDefaults = UserDefaults(suiteName: appGroup)
-//            let data = userDefaults?.string(forKey: "poopdb") ?? "No data"
-//            return(PoopWidgetEntry(date: Date(), data: data, configuration: ConfigurationAppIntent()))
-//        }
-//    }
-//    
-//    func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<PoopWidgetEntry> {
-//        var entries: [PoopWidgetEntry] = []
-//        
-//        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-//        let currentDate = Date()
-//        for hourOffset in 0 ..< 24 {
-//            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-//            // Call snapshot to get the entry for each hour
-//
-//            let entry = await snapshot(for: configuration, in: context)
-//            
-//            entries.append(entry)
-//        }
-//        return Timeline(entries: entries, policy: .atEnd)
-//    }
-//}
-//
-//struct PoopWidgetEntry: TimelineEntry {
-//    var date: Date;
-//    let data: String;
-//    let configuration: ConfigurationAppIntent;
-//}
-//
-//struct poopWidgetEntryView : View {
-//    var entry: Provider.Entry
-//
-//        var body: some View {
-//            VStack {
-//                Text("Poop widget")
-//                Text(entry.data)
-//            }
-//        }
-//}
-//
-//struct poopWidget: Widget {
-//    let kind: String = "testWidget"
-//
-//    var body: some WidgetConfiguration {
-//        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
-//            poopWidgetEntryView(entry: entry)
-//                .containerBackground(.fill.tertiary, for: .widget)
-//        }
-//    }
-//}
-//
-//extension ConfigurationAppIntent {
-//    fileprivate static var smiley: ConfigurationAppIntent {
-//        let intent = ConfigurationAppIntent()
-//        intent.favoriteEmoji = "😀"
-//        return intent
-//    }
-//    
-//    fileprivate static var starEyes: ConfigurationAppIntent {
-//        let intent = ConfigurationAppIntent()
-//        intent.favoriteEmoji = "🤩"
-//        return intent
-//    }
-//}
-//
-//#Preview(as: .systemSmall) {
-//    poopWidget()
-//} timeline: {
-//    PoopWidgetEntry(date: .now, data: "hello", configuration: .smiley)
-//    PoopWidgetEntry(date: .now, data: "world", configuration: .starEyes)
-////    SimpleEntry(date: .now, configuration: .starEyes)
-//}
-//

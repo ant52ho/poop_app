@@ -24,3 +24,35 @@ func fetchPoop() async throws -> String {
     
     return jsonString ?? "null string"
 }
+//
+//func incrementPoop() async throws -> String {
+//    let url = URL(string: "\(Config.apiUrl)/api/v1/poop/increment")! // todo
+//    var request = URLRequest(url: url)
+//    request.httpMethod = "POST"
+//    
+//    // Fetch JSON data
+//    let (data, _) = try await URLSession.shared.data(from: url);
+//
+//    // set string json data in db
+//    let jsonString = String(data: data, encoding: .utf8);
+//    let userDefaults = UserDefaults(suiteName: Config.poopAppGroup)
+//    userDefaults?.set(data, forKey: Config.dbKey)
+//    
+//    return jsonString ?? "null string"
+//}
+//
+//func decrementPoop() async throws -> String {
+//    let url = URL(string: "\(Config.apiUrl)/api/v1/poop/decrement")! // todo
+//    var request = URLRequest(url: url)
+//    request.httpMethod = "POST"
+//    
+//    // Fetch JSON data
+//    let (data, _) = try await URLSession.shared.data(from: url);
+//
+//    // set string json data in db
+//    let jsonString = String(data: data, encoding: .utf8);
+//    let userDefaults = UserDefaults(suiteName: Config.poopAppGroup)
+//    userDefaults?.set(data, forKey: Config.dbKey)
+//    
+//    return jsonString ?? "null string"
+//}

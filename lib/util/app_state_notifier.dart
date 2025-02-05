@@ -34,8 +34,8 @@ class _AppStateNotifierState extends State<AppStateNotifier>
     // reload widget
     if (state == AppLifecycleState.paused ||
         state == AppLifecycleState.resumed) {
-      // WidgetKit.reloadTimelines("poopWidget");
-      await WidgetKit.reloadAllTimelines();
+      await WidgetKit.reloadTimelines("poopWidget");
+      // await WidgetKit.reloadAllTimelines();
       print('reloaded timelines');
     }
   }

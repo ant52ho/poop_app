@@ -64,7 +64,7 @@ class _TrackerPanelState extends State<TrackerPanel> {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      // padding: EdgeInsets.all(24),
+      padding: EdgeInsets.all(24),
       decoration: BoxDecoration(
         color: color, // Background color of the rectangle
         borderRadius: BorderRadius.circular(40.0), // Rounded corners

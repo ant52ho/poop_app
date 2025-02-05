@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:poop_app/util/counter.dart';
 import 'package:poop_app/util/tracker_panel.dart';
 import 'package:poop_app/util/coming_soon.dart';
+import 'package:home_widget/home_widget.dart';
 
-class Dashboard extends StatelessWidget {
+class Dashboard extends StatefulWidget {
   // const Dashboard({super.key});
 
   final String user;
@@ -14,10 +15,27 @@ class Dashboard extends StatelessWidget {
   });
 
   @override
+  State<Dashboard> createState() => _DashboardState();
+}
+
+class _DashboardState extends State<Dashboard> {
+  @override
+  void initState() {
+    super.initState();
+    _initializeWidgetData();
+  }
+
+  Future<void> _initializeWidgetData() async {
+    await HomeWidget.saveWidgetData<String>('username', widget.user);
+    // String? hello = await HomeWidget.getWidgetData<String>('username');
+    // print("Current user is $hello");
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('${user}\'s poop tracker'),
+        title: Text('${widget.user}\'s poop tracker'),
       ),
       body: Column(
         children: [
@@ -29,16 +47,18 @@ class Dashboard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   // incrementers
-                  Flexible(child: CounterScreen(user: this.user), flex: 4),
+                  Flexible(
+                      child: CounterScreen(user: this.widget.user), flex: 4),
                   SizedBox(height: 20),
 
                   // other tracker
-                  Flexible(flex: 3, child: TrackerPanel(user: this.user)),
+                  Flexible(
+                      flex: 3, child: TrackerPanel(user: this.widget.user)),
                   // Flexible(flex: 3, child: Container(color: Colors.yellow)),
                   SizedBox(height: 20),
 
                   // calendar (just box for now)
-                  Flexible(flex: 3, child: ComingSoon()),
+                  // Flexible(flex: 3, child: ComingSoon()),
                 ],
               ),
             ),

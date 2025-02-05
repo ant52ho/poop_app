@@ -19,24 +19,12 @@
 		921702CC2C7643E200EBC2B9 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921702CB2C7643E200EBC2B9 /* AppIntent.swift */; };
 		921702CE2C7643E300EBC2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921702CD2C7643E300EBC2B9 /* Assets.xcassets */; };
 		921702D22C7643E300EBC2B9 /* poopWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 921702BE2C7643E200EBC2B9 /* poopWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		921702DE2C76539C00EBC2B9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921702C02C7643E200EBC2B9 /* WidgetKit.framework */; };
-		921702DF2C76539C00EBC2B9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921702C22C7643E200EBC2B9 /* SwiftUI.framework */; };
-		921702E22C76539C00EBC2B9 /* testWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921702E12C76539C00EBC2B9 /* testWidgetBundle.swift */; };
-		921702E42C76539C00EBC2B9 /* testWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921702E32C76539C00EBC2B9 /* testWidgetLiveActivity.swift */; };
-		921702E62C76539C00EBC2B9 /* testWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921702E52C76539C00EBC2B9 /* testWidget.swift */; };
-		921702E82C76539C00EBC2B9 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921702E72C76539C00EBC2B9 /* AppIntent.swift */; };
-		921702EA2C76539D00EBC2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921702E92C76539D00EBC2B9 /* Assets.xcassets */; };
-		921702EE2C76539D00EBC2B9 /* testWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 921702DD2C76539C00EBC2B9 /* testWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		921702F92C78E35700EBC2B9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921702C02C7643E200EBC2B9 /* WidgetKit.framework */; };
-		921702FA2C78E35700EBC2B9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921702C22C7643E200EBC2B9 /* SwiftUI.framework */; };
-		921702FD2C78E35700EBC2B9 /* testWidget2Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921702FC2C78E35700EBC2B9 /* testWidget2Bundle.swift */; };
-		921702FF2C78E35700EBC2B9 /* testWidget2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921702FE2C78E35700EBC2B9 /* testWidget2.swift */; };
-		921703012C78E35800EBC2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921703002C78E35800EBC2B9 /* Assets.xcassets */; };
-		921703052C78E35800EBC2B9 /* testWidget2Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 921702F82C78E35700EBC2B9 /* testWidget2Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9217030B2C78E7A000EBC2B9 /* fetchPoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9217030A2C78E7A000EBC2B9 /* fetchPoop.swift */; };
 		9217030D2C78E9EE00EBC2B9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9217030C2C78E9EE00EBC2B9 /* Config.swift */; };
 		921703402C78F2EE00EBC2B9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9217030C2C78E9EE00EBC2B9 /* Config.swift */; };
 		921703412C78F2FD00EBC2B9 /* fetchPoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9217030A2C78E7A000EBC2B9 /* fetchPoop.swift */; };
+		921703432C7984A000EBC2B9 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921703422C7984A000EBC2B9 /* BarChartView.swift */; };
+		921703442C7984A000EBC2B9 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921703422C7984A000EBC2B9 /* BarChartView.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
@@ -59,20 +47,6 @@
 			remoteGlobalIDString = 921702BD2C7643E200EBC2B9;
 			remoteInfo = poopWidgetExtension;
 		};
-		921702EC2C76539D00EBC2B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 921702DC2C76539C00EBC2B9;
-			remoteInfo = testWidgetExtension;
-		};
-		921703032C78E35800EBC2B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 921702F72C78E35700EBC2B9;
-			remoteInfo = testWidget2Extension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,16 +56,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				921702EE2C76539D00EBC2B9 /* testWidgetExtension.appex in Embed Foundation Extensions */,
 				921702D22C7643E300EBC2B9 /* poopWidgetExtension.appex in Embed Foundation Extensions */,
-				921703052C78E35800EBC2B9 /* testWidget2Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -120,26 +92,16 @@
 		921702C22C7643E200EBC2B9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		921702C52C7643E200EBC2B9 /* poopWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poopWidgetBundle.swift; sourceTree = "<group>"; };
 		921702C72C7643E200EBC2B9 /* poopWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poopWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		921702C92C7643E200EBC2B9 /* poopWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poopWidget.swift; sourceTree = "<group>"; };
+		921702C92C7643E200EBC2B9 /* poopWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poopWidget.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		921702CB2C7643E200EBC2B9 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		921702CD2C7643E300EBC2B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		921702CF2C7643E300EBC2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921702D82C764C5900EBC2B9 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
-		921702DD2C76539C00EBC2B9 /* testWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		921702E12C76539C00EBC2B9 /* testWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testWidgetBundle.swift; sourceTree = "<group>"; };
-		921702E32C76539C00EBC2B9 /* testWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		921702E52C76539C00EBC2B9 /* testWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testWidget.swift; sourceTree = "<group>"; };
-		921702E72C76539C00EBC2B9 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
-		921702E92C76539D00EBC2B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		921702EB2C76539D00EBC2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921702F32C7856F800EBC2B9 /* poopWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = poopWidgetExtension.entitlements; sourceTree = "<group>"; };
-		921702F82C78E35700EBC2B9 /* testWidget2Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testWidget2Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		921702FC2C78E35700EBC2B9 /* testWidget2Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testWidget2Bundle.swift; sourceTree = "<group>"; };
-		921702FE2C78E35700EBC2B9 /* testWidget2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testWidget2.swift; sourceTree = "<group>"; };
-		921703002C78E35800EBC2B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		921703022C78E35800EBC2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9217030A2C78E7A000EBC2B9 /* fetchPoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchPoop.swift; sourceTree = "<group>"; };
 		9217030C2C78E9EE00EBC2B9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		921703422C7984A000EBC2B9 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		92A4EE832C80CB8300AC6610 /* RunnerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunnerDebug.entitlements; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,24 +129,6 @@
 			files = (
 				921702C32C7643E200EBC2B9 /* SwiftUI.framework in Frameworks */,
 				921702C12C7643E200EBC2B9 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		921702DA2C76539C00EBC2B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				921702DF2C76539C00EBC2B9 /* SwiftUI.framework in Frameworks */,
-				921702DE2C76539C00EBC2B9 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		921702F52C78E35700EBC2B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				921702FA2C78E35700EBC2B9 /* SwiftUI.framework in Frameworks */,
-				921702F92C78E35700EBC2B9 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,32 +173,9 @@
 				921702CD2C7643E300EBC2B9 /* Assets.xcassets */,
 				921702CF2C7643E300EBC2B9 /* Info.plist */,
 				9217030A2C78E7A000EBC2B9 /* fetchPoop.swift */,
+				921703422C7984A000EBC2B9 /* BarChartView.swift */,
 			);
 			path = poopWidget;
-			sourceTree = "<group>";
-		};
-		921702E02C76539C00EBC2B9 /* testWidget */ = {
-			isa = PBXGroup;
-			children = (
-				921702E12C76539C00EBC2B9 /* testWidgetBundle.swift */,
-				921702E32C76539C00EBC2B9 /* testWidgetLiveActivity.swift */,
-				921702E52C76539C00EBC2B9 /* testWidget.swift */,
-				921702E72C76539C00EBC2B9 /* AppIntent.swift */,
-				921702E92C76539D00EBC2B9 /* Assets.xcassets */,
-				921702EB2C76539D00EBC2B9 /* Info.plist */,
-			);
-			path = testWidget;
-			sourceTree = "<group>";
-		};
-		921702FB2C78E35700EBC2B9 /* testWidget2 */ = {
-			isa = PBXGroup;
-			children = (
-				921702FC2C78E35700EBC2B9 /* testWidget2Bundle.swift */,
-				921702FE2C78E35700EBC2B9 /* testWidget2.swift */,
-				921703002C78E35800EBC2B9 /* Assets.xcassets */,
-				921703022C78E35800EBC2B9 /* Info.plist */,
-			);
-			path = testWidget2;
 			sourceTree = "<group>";
 		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
@@ -275,8 +196,6 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				921702C42C7643E200EBC2B9 /* poopWidget */,
-				921702E02C76539C00EBC2B9 /* testWidget */,
-				921702FB2C78E35700EBC2B9 /* testWidget2 */,
 				921702BF2C7643E200EBC2B9 /* Frameworks */,
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
@@ -290,8 +209,6 @@
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				331C8081294A63A400263BE5 /* RunnerTests.xctest */,
 				921702BE2C7643E200EBC2B9 /* poopWidgetExtension.appex */,
-				921702DD2C76539C00EBC2B9 /* testWidgetExtension.appex */,
-				921702F82C78E35700EBC2B9 /* testWidget2Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,6 +216,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				92A4EE832C80CB8300AC6610 /* RunnerDebug.entitlements */,
 				921702D82C764C5900EBC2B9 /* Runner.entitlements */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
@@ -364,40 +282,6 @@
 			productReference = 921702BE2C7643E200EBC2B9 /* poopWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		921702DC2C76539C00EBC2B9 /* testWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 921702F22C76539D00EBC2B9 /* Build configuration list for PBXNativeTarget "testWidgetExtension" */;
-			buildPhases = (
-				921702D92C76539C00EBC2B9 /* Sources */,
-				921702DA2C76539C00EBC2B9 /* Frameworks */,
-				921702DB2C76539C00EBC2B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = testWidgetExtension;
-			productName = testWidgetExtension;
-			productReference = 921702DD2C76539C00EBC2B9 /* testWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		921702F72C78E35700EBC2B9 /* testWidget2Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 921703092C78E35800EBC2B9 /* Build configuration list for PBXNativeTarget "testWidget2Extension" */;
-			buildPhases = (
-				921702F42C78E35700EBC2B9 /* Sources */,
-				921702F52C78E35700EBC2B9 /* Frameworks */,
-				921702F62C78E35700EBC2B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = testWidget2Extension;
-			productName = testWidget2Extension;
-			productReference = 921702F82C78E35700EBC2B9 /* testWidget2Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		97C146ED1CF9000F007C117D /* Runner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
@@ -416,8 +300,6 @@
 			);
 			dependencies = (
 				921702D12C7643E300EBC2B9 /* PBXTargetDependency */,
-				921702ED2C76539D00EBC2B9 /* PBXTargetDependency */,
-				921703042C78E35800EBC2B9 /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -442,12 +324,6 @@
 					921702BD2C7643E200EBC2B9 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					921702DC2C76539C00EBC2B9 = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					921702F72C78E35700EBC2B9 = {
-						CreatedOnToolsVersion = 15.4;
-					};
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1100;
@@ -470,8 +346,6 @@
 				97C146ED1CF9000F007C117D /* Runner */,
 				331C8080294A63A400263BE5 /* RunnerTests */,
 				921702BD2C7643E200EBC2B9 /* poopWidgetExtension */,
-				921702DC2C76539C00EBC2B9 /* testWidgetExtension */,
-				921702F72C78E35700EBC2B9 /* testWidget2Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -489,22 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				921702CE2C7643E300EBC2B9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		921702DB2C76539C00EBC2B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				921702EA2C76539D00EBC2B9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		921702F62C78E35700EBC2B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				921703012C78E35800EBC2B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,28 +491,9 @@
 				921702CC2C7643E200EBC2B9 /* AppIntent.swift in Sources */,
 				921703412C78F2FD00EBC2B9 /* fetchPoop.swift in Sources */,
 				921703402C78F2EE00EBC2B9 /* Config.swift in Sources */,
+				921703442C7984A000EBC2B9 /* BarChartView.swift in Sources */,
 				921702C82C7643E200EBC2B9 /* poopWidgetLiveActivity.swift in Sources */,
 				921702C62C7643E200EBC2B9 /* poopWidgetBundle.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		921702D92C76539C00EBC2B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				921702E42C76539C00EBC2B9 /* testWidgetLiveActivity.swift in Sources */,
-				921702E82C76539C00EBC2B9 /* AppIntent.swift in Sources */,
-				921702E22C76539C00EBC2B9 /* testWidgetBundle.swift in Sources */,
-				921702E62C76539C00EBC2B9 /* testWidget.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		921702F42C78E35700EBC2B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				921702FF2C78E35700EBC2B9 /* testWidget2.swift in Sources */,
-				921702FD2C78E35700EBC2B9 /* testWidget2Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +503,7 @@
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				9217030D2C78E9EE00EBC2B9 /* Config.swift in Sources */,
+				921703432C7984A000EBC2B9 /* BarChartView.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 				9217030B2C78E7A000EBC2B9 /* fetchPoop.swift in Sources */,
 			);
@@ -681,16 +521,6 @@
 			isa = PBXTargetDependency;
 			target = 921702BD2C7643E200EBC2B9 /* poopWidgetExtension */;
 			targetProxy = 921702D02C7643E300EBC2B9 /* PBXContainerItemProxy */;
-		};
-		921702ED2C76539D00EBC2B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 921702DC2C76539C00EBC2B9 /* testWidgetExtension */;
-			targetProxy = 921702EC2C76539D00EBC2B9 /* PBXContainerItemProxy */;
-		};
-		921703042C78E35800EBC2B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 921702F72C78E35700EBC2B9 /* testWidget2Extension */;
-			targetProxy = 921703032C78E35800EBC2B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -774,6 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 6W328T7BG2;
 				ENABLE_BITCODE = NO;
@@ -844,8 +675,8 @@
 		921702D42C7643E300EBC2B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -853,6 +684,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = poopWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6W328T7BG2;
@@ -874,6 +706,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.poopWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -886,8 +719,8 @@
 		921702D52C7643E300EBC2B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -895,6 +728,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = poopWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6W328T7BG2;
@@ -915,6 +749,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.poopWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -925,8 +760,8 @@
 		921702D62C7643E300EBC2B9 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -934,6 +769,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = poopWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6W328T7BG2;
@@ -954,240 +790,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.poopWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Profile;
-		};
-		921702EF2C76539D00EBC2B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6W328T7BG2;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = testWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.testWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		921702F02C76539D00EBC2B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6W328T7BG2;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = testWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.testWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		921702F12C76539D00EBC2B9 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6W328T7BG2;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = testWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.testWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Profile;
-		};
-		921703062C78E35800EBC2B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6W328T7BG2;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testWidget2/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = testWidget2;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.testWidget2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		921703072C78E35800EBC2B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6W328T7BG2;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testWidget2/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = testWidget2;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.testWidget2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		921703082C78E35800EBC2B9 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6W328T7BG2;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = testWidget2/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = testWidget2;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp.testWidget2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1199,7 +802,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1256,7 +859,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1313,7 +916,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Runner/RunnerDebug.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 6W328T7BG2;
 				ENABLE_BITCODE = NO;
@@ -1325,6 +930,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.poopApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1340,6 +946,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 6W328T7BG2;
 				ENABLE_BITCODE = NO;
@@ -1376,26 +983,6 @@
 				921702D42C7643E300EBC2B9 /* Debug */,
 				921702D52C7643E300EBC2B9 /* Release */,
 				921702D62C7643E300EBC2B9 /* Profile */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		921702F22C76539D00EBC2B9 /* Build configuration list for PBXNativeTarget "testWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				921702EF2C76539D00EBC2B9 /* Debug */,
-				921702F02C76539D00EBC2B9 /* Release */,
-				921702F12C76539D00EBC2B9 /* Profile */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		921703092C78E35800EBC2B9 /* Build configuration list for PBXNativeTarget "testWidget2Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				921703062C78E35800EBC2B9 /* Debug */,
-				921703072C78E35800EBC2B9 /* Release */,
-				921703082C78E35800EBC2B9 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

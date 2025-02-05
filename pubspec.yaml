@@ -41,9 +41,12 @@ dependencies:
   shared_preference_app_group: ^1.1.1
   home_widget: ^0.6.0
   widget_kit_plugin: ^0.1.1
+  # flutter_local_notifications: ^17.2.2
   # shared_preferences_foundation: ^2.5.2
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+
   flutter_test:
     sdk: flutter
 
@@ -94,3 +97,21 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/poop.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icon/poop.png"
+    background_color: "#FFFFFF"
+    theme_color: "#FFFFFF"
+  windows:
+    generate: true
+    image_path: "assets/icon/poop.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icon/poop.png"

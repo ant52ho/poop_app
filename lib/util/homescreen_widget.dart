@@ -26,7 +26,6 @@ class HomescreenWidget {
   // store data to shared preferences (stores in userdefaults under the hood)
   HomescreenWidget.updateData(dynamic data) {
     String res = jsonEncode(data);
-    print(res);
     HomeWidget.saveWidgetData<String>('poopdb', res);
     HomeWidget.updateWidget(
       iOSName: iOSWidgetName,

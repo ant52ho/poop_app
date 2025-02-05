@@ -49,14 +49,14 @@ class HomePage extends StatelessWidget {
                           onTap: onPushed("clare"),
                           color: const Color.fromARGB(255, 229, 82, 131)),
                     ),
-                    Flexible(
-                      flex: 1,
-                      child: SelectionButton(
-                          text: "Nimbus",
-                          subtext: "meow",
-                          onTap: onPushed("Nimbus"),
-                          color: Color.fromARGB(255, 150, 141, 144)),
-                    ),
+                    // Flexible(
+                    //   flex: 1,
+                    //   child: SelectionButton(
+                    //       text: "Nimbus",
+                    //       subtext: "meow",
+                    //       onTap: () {},
+                    //       color: Color.fromARGB(255, 150, 141, 144)),
+                    // ),
                   ],
                 ),
               ),
